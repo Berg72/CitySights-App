@@ -26,6 +26,9 @@ struct ContentView: View {
             .foregroundColor(.black)
         }
         .padding()
+        .onAppear() {
+            print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+        }
     }
 }
 
