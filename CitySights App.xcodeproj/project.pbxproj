@@ -11,6 +11,7 @@
 		D992DF4D2BB5DAEB00EB948F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF4C2BB5DAEB00EB948F /* ContentView.swift */; };
 		D992DF4F2BB5DAED00EB948F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D992DF4E2BB5DAED00EB948F /* Assets.xcassets */; };
 		D992DF522BB5DAED00EB948F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D992DF512BB5DAED00EB948F /* Preview Assets.xcassets */; };
+		D992DF5D2BBA4B7E00EB948F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF5C2BBA4B7E00EB948F /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D992DF512BB5DAED00EB948F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D992DF582BB7151B00EB948F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D992DF592BB715F200EB948F /* CitySights-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CitySights-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D992DF5C2BBA4B7E00EB948F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				D992DF592BB715F200EB948F /* CitySights-App-Info.plist */,
 				D992DF4A2BB5DAEB00EB948F /* CitySights_AppApp.swift */,
 				D992DF4C2BB5DAEB00EB948F /* ContentView.swift */,
+				D992DF5C2BBA4B7E00EB948F /* DataService.swift */,
 				D992DF582BB7151B00EB948F /* Config.xcconfig */,
 				D992DF4E2BB5DAED00EB948F /* Assets.xcassets */,
 				D992DF502BB5DAED00EB948F /* Preview Content */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D992DF5D2BBA4B7E00EB948F /* DataService.swift in Sources */,
 				D992DF4D2BB5DAEB00EB948F /* ContentView.swift in Sources */,
 				D992DF4B2BB5DAEB00EB948F /* CitySights_AppApp.swift in Sources */,
 			);
