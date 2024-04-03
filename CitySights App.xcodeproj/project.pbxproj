@@ -14,6 +14,7 @@
 		D992DF5D2BBA4B7E00EB948F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF5C2BBA4B7E00EB948F /* DataService.swift */; };
 		D992DF602BBB046100EB948F /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF5F2BBB046100EB948F /* BusinessSearch.swift */; };
 		D992DF622BBB04E300EB948F /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF612BBB04E300EB948F /* Business.swift */; };
+		D9F6510A2BBE020300F03E28 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F651092BBE020300F03E28 /* TextHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D992DF5C2BBA4B7E00EB948F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D992DF5F2BBB046100EB948F /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		D992DF612BBB04E300EB948F /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		D9F651092BBE020300F03E28 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +86,17 @@
 			children = (
 				D992DF5F2BBB046100EB948F /* BusinessSearch.swift */,
 				D992DF612BBB04E300EB948F /* Business.swift */,
+				D9F651082BBE01EE00F03E28 /* Helpers */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9F651082BBE01EE00F03E28 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D9F651092BBE020300F03E28 /* TextHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				D992DF602BBB046100EB948F /* BusinessSearch.swift in Sources */,
 				D992DF4D2BB5DAEB00EB948F /* ContentView.swift in Sources */,
 				D992DF622BBB04E300EB948F /* Business.swift in Sources */,
+				D9F6510A2BBE020300F03E28 /* TextHelper.swift in Sources */,
 				D992DF4B2BB5DAEB00EB948F /* CitySights_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
