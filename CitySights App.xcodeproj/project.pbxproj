@@ -15,6 +15,7 @@
 		D992DF602BBB046100EB948F /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF5F2BBB046100EB948F /* BusinessSearch.swift */; };
 		D992DF622BBB04E300EB948F /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992DF612BBB04E300EB948F /* Business.swift */; };
 		D9F6510A2BBE020300F03E28 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F651092BBE020300F03E28 /* TextHelper.swift */; };
+		D9F6510C2BC0310700F03E28 /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6510B2BC0310700F03E28 /* BusinessDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D992DF5F2BBB046100EB948F /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		D992DF612BBB04E300EB948F /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		D9F651092BBE020300F03E28 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
+		D9F6510B2BC0310700F03E28 /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D992DF592BB715F200EB948F /* CitySights-App-Info.plist */,
 				D992DF4A2BB5DAEB00EB948F /* CitySights_AppApp.swift */,
 				D992DF4C2BB5DAEB00EB948F /* ContentView.swift */,
+				D9F6510B2BC0310700F03E28 /* BusinessDetailView.swift */,
 				D992DF5C2BBA4B7E00EB948F /* DataService.swift */,
 				D992DF5E2BBB043900EB948F /* Model */,
 				D992DF582BB7151B00EB948F /* Config.xcconfig */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D992DF5D2BBA4B7E00EB948F /* DataService.swift in Sources */,
+				D9F6510C2BC0310700F03E28 /* BusinessDetailView.swift in Sources */,
 				D992DF602BBB046100EB948F /* BusinessSearch.swift in Sources */,
 				D992DF4D2BB5DAEB00EB948F /* ContentView.swift in Sources */,
 				D992DF622BBB04E300EB948F /* Business.swift in Sources */,

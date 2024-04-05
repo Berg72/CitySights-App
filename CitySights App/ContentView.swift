@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State var businesses = [Business]()
     @State var query: String = ""
+    @State var selectedBusiness: Business?
     var service = DataService()
     
     var body: some View {
@@ -47,12 +48,19 @@ struct ContentView: View {
                     }
                     Divider()
                 }
-                .listRowSeparator(.hidden)
+                .onTapGesture {
+                    selectedBusiness = b
+                }
             }
-            .listStyle(.plain)
+            .listRowSeparator(.hidden)
         }
+        .listStyle(.plain)
+
         .task {
             businesses = await service.businessSearch()
+        }
+        .sheet(item: $selectedBusiness) { item in
+            BusinessDetailView(business: item)
         }
     }
 }
