@@ -1,33 +1,17 @@
 //
-//  ContentView.swift
+//  ListView.swift
 //  CitySights App
 //
-//  Created by Mark Bergeson on 3/28/24.
+//  Created by Mark Bergeson on 4/12/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
     
     @Environment(BusinessModel.self) var model
-    
     var body: some View {
         
-        @Bindable var model = model
-        
-        HStack {
-            TextField("What are you looking for?", text: $model.query)
-            Button {
-                
-            } label: {
-                Text("Go")
-                    .padding(.horizontal)
-                    .padding(.vertical, 10.0)
-                    .background(.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10.0)
-            }
-        }
         List {
             ForEach(model.businesses) { b in
                 VStack {
@@ -54,16 +38,11 @@ struct ContentView: View {
             }
             .listRowSeparator(.hidden)
         }
-        .onAppear {
-            model.getBusinesses()
-        }
         .listStyle(.plain)
-        .sheet(item: $model.selectedBusiness) { item in
-            BusinessDetailView()
-        }
     }
 }
 
 #Preview {
-    ContentView()
+    ListView()
+        .environment(BusinessModel())
 }
