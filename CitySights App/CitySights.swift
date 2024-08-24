@@ -25,7 +25,7 @@ struct CitySights: App {
                         .environment(model)
                 }
                 .onAppear {
-                    if needsOnboarding == false {
+                    if needsOnboarding == false && model.locationAuthStatus == .notDetermined {
                         model.getUserLocation()
                     }
                 }
