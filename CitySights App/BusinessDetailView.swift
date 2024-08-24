@@ -61,6 +61,17 @@ struct BusinessDetailView: View {
                     HStack {
                         Image(systemName: "phone")
                         Text(business?.phone ?? "")
+                        
+                        if let url = URL(string: "tel:\(business?.phone ?? "")") {
+                            Link(destination: url) {
+                                Text(business?.phone ?? "")
+                            }
+                        }
+                        else {
+                            Text(business?.phone ?? "")
+                        }
+                        
+                        
                         Spacer()
                         Image(systemName: "arrow.right")
                         
@@ -71,6 +82,16 @@ struct BusinessDetailView: View {
                     
                     HStack {
                         Image(systemName: "globe")
+                        
+                        if let url = URL(string: "\(business?.url ?? "")") {
+                            Link(destination: url) {
+                            }
+                        }
+                        else {
+                            Text(business?.url ?? "")
+                                .lineLimit(1)
+                        }
+                        
                         Text(business?.url ?? "")
                             .lineLimit(1)
                         Spacer()
@@ -83,8 +104,6 @@ struct BusinessDetailView: View {
                     HStack {
                         Image(systemName: "bubble.left.and.bubble.right")
                         Text("\(business?.reviewCount ?? 0) reviews")
-                        Spacer()
-                        Image(systemName: "arrow.right")
                         
                     }
                     .padding(.vertical, 12.0)
